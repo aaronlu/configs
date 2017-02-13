@@ -1,0 +1,10 @@
+# look and feel
+#caption always "%{= bb}%{+b w}%n %t %h %=%l %H %c"
+hardstatus alwayslastline "%-Lw%{= bW}%>%n%f* %t%{-}%+Lw%=%Y-%M-%d %c%<"
+
+#caption always "%?%{ Wk}%-Lw%?%{Rk}%n*%f %t%?(%u)%?%?%{Wk}%+Lw%? %{Rk}%=%c %{rk}%d/%M/%Y"
+#hardstatus string "%{+b Rk}(%{-b g}$LOGNAME@%H%{+b R}) (%{-b g}%C %a%{+b R}) %{-b g} %n %t %h"
+
+#hardstatus alwayslastline
+#hardstatus string "%-Lw%{= bW}%n%f %t%{-}%=%+Lw %C%a %Y-%M-%d"
+#hardstatus string "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%M-%d"
