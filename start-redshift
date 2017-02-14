@@ -1,4 +1,4 @@
 #!/bin/sh
 
-pidof redshift > /dev/null && exit
+killall redshift
 redshift -l 31:121 -t 4500:3500
