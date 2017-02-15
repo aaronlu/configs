@@ -1,0 +1,24 @@
+# https://wiki.archlinux.org/index.php/Xfce#Lock_the_screen
+# install light-locker
+# initially set lock command
+xfconf-query -c xfce4-session -p /general/LockCommand -s "light-locker-command -l" --create -t string
+# update lock command
+xfconf-query -c xfce4-session -p /general/LockCommand -s "light-locker-command -l"
+
+# modify /etc/lightdm/lightdm-gtk-greeter.conf to adjust lightdm
+
+# transparent background for icon titles on desktop
+# https://wiki.archlinux.org/index.php/Xfce#Transparent_background_for_icon_titles
+# To change the default white background of desktop icon titles to something more suitable, create or edit ~/.gtkrc-2.0:
+
+style "xfdesktop-icon-view" {
+    XfdesktopIconView::label-alpha = 10
+    base[NORMAL] = "#000000"
+    base[SELECTED] = "#71B9FF"
+    base[ACTIVE] = "#71B9FF"
+    fg[NORMAL] = "#fcfcfc"
+    fg[SELECTED] = "#ffffff"
+    fg[ACTIVE] = "#ffffff"
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+
