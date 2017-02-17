@@ -1,11 +1,23 @@
-xterm*faceName: mono:size=20
+xterm*faceName: xft:monospace:size=16
 xterm*background: black
 xterm*foreground: white
 
-Rxvt*font: xft:monospace:size=16
+Rxvt*font: xft:monospace:size=15,xft:Source Han Sans CN Regular
 Rxvt*background: 0
 Rxvt*foreground: 15
+! make blue light(easier to be seen)
 Rxvt.color12: rgb:5c/5c/ff
+! do not like the scrollbar
+Rxvt.scrollBar: 0
+
+! perl extension: click to open the web page
 Rxvt.perl-ext-common: default,matcher
 Rxvt.url-launcher: /usr/bin/xdg-open
 Rxvt.matcher.button: 1
+
+! with tmux, rxvt's tab isn't of much use
+!Rxvt.perl-ext-common: default,matcher,tabbed
+Rxvt.tabbed.tabbar-fg: 2
+Rxvt.tabbed.tabbar-bg: 0
+Rxvt.tabbed.tab-fg: 3
+Rxvt.tabbed.tab-bg: 0
