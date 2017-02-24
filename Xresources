@@ -21,3 +21,7 @@ Rxvt.tabbed.tabbar-fg: 2
 Rxvt.tabbed.tabbar-bg: 0
 Rxvt.tabbed.tab-fg: 3
 Rxvt.tabbed.tab-bg: 0
+
+! perl extension to resize-font
+! https://github.com/simmel/urxvt-resize-font
+! place resize-font under ~/.urxvt/ext
