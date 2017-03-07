@@ -1,0 +1,10 @@
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/messages
+set message_cache_clean=yes
+set sort = threads
+set sort_aux = last-date-received
+set editor = vim
+set user_agent = no
+set edit_headers = yes
+# do not move to the next message when at the end of a message
+set pager_stop = yes
