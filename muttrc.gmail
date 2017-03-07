@@ -1,12 +1,12 @@
 set folder=imaps://imap.gmail.com:993/
-set imap_user=user@gmail.com
+set imap_user=username@gmail.com
 set spoolfile=+INBOX
 set imap_check_subscribed
-set postponed=+Drafts
+set postponed="+[Gmail]/Drafts"
 set mail_check=120
 set imap_keepalive = 300
 
-set record=+Sent
-set smtp_url=smtps://user@gmail.com@imap.gmail.com:465
-set realname = ''
-set from = user@gmail.com
+set record="+[Gmail]/Sent Mail"
+set smtp_url=smtps://username@gmail.com@imap.gmail.com:465
+set realname = 'Your Name'
+set from = username@gmail.com
