@@ -22,3 +22,6 @@ style "xfdesktop-icon-view" {
 }
 widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 
+# lcddefault
+# http://docs.xfce.org/xfce/xfce4-settings/appearance
+xfconf-query -c xsettings -p /Xft/Lcdfilter -n -t string -s lcddefault
