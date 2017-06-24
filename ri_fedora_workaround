@@ -1,0 +1,10 @@
+~~~
+$ ri --doc-dir=/usr/share/ri/system/ Array.new
+~~
+
+or
+
+~~
+$ export RI=--doc-dir=/usr/share/ri/system/
+$ ri Array.new
+~~
