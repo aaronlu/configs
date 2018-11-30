@@ -1,10 +1,27 @@
-set header_cache = ~/.mutt/cache/headers
-set message_cachedir = ~/.mutt/cache/messages
-set message_cache_clean=yes
-set sort = threads
-set sort_aux = last-date-received
+# cache
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/messages
+set certificate_file=~/.mutt/certificates
+
+# misc
 set editor = vim
-set user_agent = no
+set sort = threads
 set edit_headers = yes
-# do not move to the next message when at the end of a message
+set sort_aux = last-date-received
+set auto_tag = yes
 set pager_stop = yes
+
+# order
+alternative_order text/plain text/enriched text/html
+auto_view text/html
+
+# address book
+set query_command="abook --mutt-query '%s'"
+bind editor <Tab> complete-query
+macro index,pager a "<pipe-message>abook --add-email<return>" "add the sender address to contacts"
+
+# Default list of header fields to weed when displaying.
+# Ignore all lines by default...
+ignore *
+# ... then allow these through.
+unignore from: subject to cc date x-url
