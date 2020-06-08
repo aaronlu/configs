@@ -6,7 +6,8 @@ set postponed="+[Gmail]/Drafts"
 set mail_check=120
 set imap_keepalive = 300
 
-set record="+[Gmail]/Sent Mail"
+# it appears gmail will always copy outgoing email
+#set record="+[Gmail]/Sent Mail"
 set smtp_url=smtps://username@gmail.com@imap.gmail.com:465
-set realname = 'Your Name'
+set realname = 'Aaron Lu'
 set from = username@gmail.com
