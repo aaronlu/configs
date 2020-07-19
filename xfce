@@ -1,3 +1,6 @@
+# make natural scroll work everywhere
+synclient VertScrollDelta=-28
+
 # https://wiki.archlinux.org/index.php/Xfce#Lock_the_screen
 # install light-locker
 # initially set lock command
