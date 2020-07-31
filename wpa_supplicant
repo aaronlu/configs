@@ -1,0 +1,5 @@
+# wpa_supplicant -B -i wlp2s0 -c <(wpa_passphrase wssid passphrase)
+# dhclient
+
+On thinkpad, also copy iwlwifi from firmware-nonfree
+on dell, copy firmware-atheros
