@@ -1,0 +1,4 @@
+export PATH=$HOME/bin:$PATH
+xmodmap -e "remove control = Control_R"
+xmodmap -e "add mod3 = Control_R"
+exec i3
