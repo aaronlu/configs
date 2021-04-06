@@ -2,7 +2,13 @@ xterm*faceName: xft:monospace:size=16
 xterm*background: black
 xterm*foreground: white
 
-Rxvt*font: xft:monospace:size=15,xft:Source Han Sans CN Regular
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.hintstyle: hintslight
+Xft.dpi:       130
+
+Rxvt*font: xft:ubuntu mono:size=15:antialias=true
 Rxvt*background: 0
 Rxvt*foreground: 15
 ! make blue light(easier to be seen)

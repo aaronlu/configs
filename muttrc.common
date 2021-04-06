@@ -1,7 +1,7 @@
 # cache
-set header_cache=~/.cache/mutt/headers
-set message_cachedir=~/.cache/mutt/messages
-set certificate_file=~/.cache/mutt/certificates
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/messages
+set certificate_file=~/.mutt/cache/certificates
 
 # misc
 set editor = vim
@@ -10,7 +10,8 @@ set edit_headers = yes
 set sort_aux = last-date-received
 set auto_tag = yes
 set pager_stop = yes
-set crypt_use_gpgme=no
+set crypt_use_gpgme = no
+set user_agent = no
 
 # order
 alternative_order text/plain text/enriched text/html
