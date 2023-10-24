@@ -33,3 +33,6 @@ macro index 4 "<pipe-message>b4 mbox -fo ~/mail/b4<return>"
 
 # mutt-2.1+ only
 set message_id_format = "<%Y%02m%02d%02H%02M%02S.G%c%p@%f>"
+
+# color
+source ~/src/configs/muttrc.colors.xterm

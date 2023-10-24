@@ -1,0 +1,33 @@
+# -*-muttrc-*-
+
+# Colors for use with xterm and the like, white background.
+
+color hdrdefault red white
+color quoted blue white
+color signature red white
+color attachment red white
+color prompt brightmagenta white
+color message brightred white
+color error brightred white
+#color indicator brightyellow red
+color indicator black red
+color status brightgreen blue
+color tree black white
+color normal black white
+color markers red white
+color search white black
+color tilde brightmagenta white
+color index blue white ~F
+# I do not like marking unread messages with special color
+# so I commented out the below line
+#color index red white "~N|~O"
+
+# Fedora has a global setting for the below lines so I had to
+# explicitely overwrite them
+color header red white ^(From|Subject):
+color body magenta white "(ftp|http|https)://[^ ]+"   # point out URLs
+color body magenta white [-a-z_0-9.]+@[-a-z_0-9.]+    # e-mail addresses
+color underline brightgreen white
+
+# color body brightblack white '\*+[^*]+\*+'
+# color body brightblack white '_+[^_]+_+'
